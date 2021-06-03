@@ -17,62 +17,60 @@ $(document).ready(function() {
     $("#inputName").text(name);
 
     if ((gender === "g-male") || (gender === "g-all" && totalValue % 2 === 0)) {
-      //male quiz
       if (totalValue < 15) {
         $("#celebrityName").text("Tom Cruise");
         $("#celebImg").attr("src","img/TomCruise.jpeg");
-        $("#hidden").show();
+        $("#hidden").fadeIn(2000);
         //Tom Cruise
       } else if (totalValue >=15 && totalValue < 30 ) {
         $("#celebrityName").text("Tom Hanks");
         $("#celebImg").attr("src","img/TomHanks.jpeg");
-        $("#hidden").show();
+        $("#hidden").fadeIn(2000);
         //Tom Hanks
       } else if (totalValue >=30 && totalValue < 45 ) {
         $("#celebrityName").text("Will Smith");
         $("#celebImg").attr("src","img/WillSmith.jpeg");
-        $("#hidden").show();
+        $("#hidden").fadeIn(2000);
         //Will Smith
       } else if (totalValue >=45 && totalValue < 60 ) {
         $("#celebrityName").text("Ricky Martin");
         $("#celebImg").attr("src","img/RickyMartin.jpeg");
-        $("#hidden").show();
+        $("#hidden").fadeIn(2000);
         //Ricky Martin
       } else {
         $("#celebrityName").text("Michael Jordan");
         $("#celebImg").attr("src","img/MichaelJordan.jpeg");
-        $("#hidden").show();
+        $("#hidden").fadeIn(2000);
         //Michael Jordan
       }
 
     }
         
     if ((gender === "g-female") || (gender === "g-all" && totalValue % 2 != 0)) {
-      //female quiz;
       if (totalValue < 15) {
         $("#celebrityName").text("Julia Roberts");
         $("#celebImg").attr("src","img/JuliaRoberts.jpeg");
-        $("#hidden").show();
+        $("#hidden").fadeIn(2000);
         //Julia Roberts
       } else if (totalValue >=15 && totalValue < 30 ) {
         $("#celebrityName").text("Whitney Houston");
         $("#celebImg").attr("src","img/WhitneyHouston.jpeg");
-        $("#hidden").show();
+        $("#hidden").fadeIn(2000);
         //Whitney Houston
       } else if (totalValue >=30 && totalValue < 45 ) {
         $("#celebrityName").text("Sandra Bullock");
         $("#celebImg").attr("src","img/SandraBullock.jpeg");
-        $("#hidden").show();
+        $("#hidden").fadeIn(2000);
         //Sandra Bullock
       } else if (totalValue >=45 && totalValue < 60 ) {
         $("#celebrityName").text("Oprah");
         $("#celebImg").attr("src","img/Oprah.jpeg");
-        $("#hidden").show();
+        $("#hidden").fadeIn(2000);
         //Opran
       } else {
         $("#celebrityName").text("Julia Louis-Dreyfus");
         $("#celebImg").attr("src","img/JuliaLouis.jpeg");
-        $("#hidden").show();
+        $("#hidden").fadeIn(2000);
         //Julia Louis-Dreyfuss
       }
     }

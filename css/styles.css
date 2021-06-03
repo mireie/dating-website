@@ -30,6 +30,9 @@ background-color:white;
 display:block;
 margin:auto;
 max-width:500px;
+border:solid cyan 10px;
+text-align: center;
+
 }
 #sidebar {
   background-color:blanchedalmond;
