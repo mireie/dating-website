@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>90's Celebrity Matchmaking</title>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron" id="heading">
+    <h1>90's Celebrity matchmaking</h1>
+      <p>Get matched with some rad people</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <form id="formOne">
+          <div class="form-group">
+            <label for="userName">Your name, please</label>
+            <input id="userName" class="form-control" type="text">
+          </div>
+          <label for="gender">Who are you interested in?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="gender" value="g-male" >
+              Radical Dudes
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="gender" value="g-female">
+              Fly Ladies
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="gender" value="g-all">
+              All Home Skillets
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="band">What's your favorite band?</label>
+            <select class="form-control" id="band">
+              <option>Backstreet Boys</option>
+              <option>N'Sync</option>
+              <option>98 Degrees</option>
+              <option>Boys 2 Men</option>
+            </select>        
+          </div>
+          <div class="form-group">
+            <label for="tvShow">What's your favorite tv show?</label>
+            <select class="form-control" id="tvshow">
+              <option>Fresh Prince of Bel-air</option>
+              <option>Seinfeld</option>
+              <option>Friends</option>
+              <option>Melrose Place</option>
+              <option>Boy Meets World</option>
+              <option>Saved by the Bell</option>
+              <option>Family Matters</option>
+              <option>Full House</option>
+              <option>Frasier</option>
+            </select>   
+          </div>
+          <div class="form-group">
+            <label for="userName">Which region of the country do you like your rap/hip hop from?</label>
+            <select class="form-control" id="rap">
+              <option>East Coast</option>
+              <option>West Coast</option>
+              <option>Midwest</option>
+              <option>Southeast</option>
+              <option>Other</option>
+            </select>   
+          </div>
+          <button class="btn btn-warning">Submit</button>
+        </form>
+      </div>
+      <div class="col-md-4" id="hidden">
+        <h1>Here's your match!</h1>
+        <img src="img/notyetdefinied" alt="a photo of a celeb">
+        <p>Ooh la la, lucky you! You've matched with<span id="celebrityName"></span></p>
+      </div>
+  </div>  
+  </div>
+</body>
+</html>
