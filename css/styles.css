@@ -1,8 +1,36 @@
 body {
   background-color: aqua;
+  background-image:url('https://images.firstwefeast.com/complex/image/upload/c_fill,dpr_auto,f_auto,fl_lossy,g_face,q_auto,w_1280/kpn8ygpwcbdmnnqoxf0w.jpg');
+  background-size:contain;
+
+
 }
 
 #heading {
   background-color: blanchedalmond;
   text-align: center;
+  border: 4px rgb(233, 142, 157) solid;
+}
+.question-title {
+  font-weight:bolder;
+  font-size:1.5em;
+}
+
+#hidden {
+  display: none;
+}
+
+#celebImg {
+  max-width:500px;
+  margin:auto;
+  display:block;
+}
+.result {
+background-color:white;
+display:block;
+margin:auto;
+max-width:500px;
+}
+#sidebar {
+  background-color:blanchedalmond;
 }

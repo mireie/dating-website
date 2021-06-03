@@ -19,13 +19,13 @@
     </div>
 
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-4" id="sidebar">
         <form id="formOne">
           <div class="form-group">
-            <label for="userName">Your name, please</label>
+            <label class="question-title" for="userName">Your name, please</label>
             <input id="userName" class="form-control" type="text">
           </div>
-          <label for="gender">Who are you interested in?</label>
+          <label class="question-title" for="gender">Who are you interested in?</label>
           <div class="radio">
             <label>
               <input type="radio" name="gender" value="g-male" >
@@ -45,47 +45,49 @@
             </label>
           </div>
           <div class="form-group">
-            <label for="band">What's your favorite band?</label>
+            <label class="question-title" for="band">What's your favorite band?</label>
             <select class="form-control" id="band">
-              <option>Backstreet Boys</option>
-              <option>N'Sync</option>
-              <option>98 Degrees</option>
-              <option>Boys 2 Men</option>
+              <option value="0">Backstreet Boys</option>
+              <option value="5">N'Sync</option>
+              <option value="10">98 Degrees</option>
+              <option value="15">Boys 2 Men</option>
             </select>        
           </div>
           <div class="form-group">
-            <label for="tvShow">What's your favorite tv show?</label>
+            <label class="question-title" for="tvShow">What's your favorite tv show?</label>
             <select class="form-control" id="tvshow">
-              <option>Fresh Prince of Bel-air</option>
-              <option>Seinfeld</option>
-              <option>Friends</option>
-              <option>Melrose Place</option>
-              <option>Boy Meets World</option>
-              <option>Saved by the Bell</option>
-              <option>Family Matters</option>
-              <option>Full House</option>
-              <option>Frasier</option>
+              <option value="0">Fresh Prince of Bel-air</option>
+              <option value="5">Seinfeld</option>
+              <option value="10">Friends</option>
+              <option value="15">Melrose Place</option>
+              <option value="20">Boy Meets World</option>
+              <option value="25">Saved by the Bell</option>
+              <option value="30">Family Matters</option>
+              <option value="35">Full House</option>
+              <option value="40">Frasier</option>
             </select>   
           </div>
           <div class="form-group">
-            <label for="userName">Which region of the country do you like your rap/hip hop from?</label>
+            <label class="question-title" for="userName">Which region of the country do you like your rap/hip hop from?</label>
             <select class="form-control" id="rap">
-              <option>East Coast</option>
-              <option>West Coast</option>
-              <option>Midwest</option>
-              <option>Southeast</option>
-              <option>Other</option>
+              <option value= "0">East Coast</option>
+              <option value= "5">West Coast</option>
+              <option value= "10">Midwest</option>
+              <option value= "15">Southeast</option>
+              <option value= "20">Other</option>
             </select>   
           </div>
-          <button class="btn btn-warning">Submit</button>
+          <button type="submit" class="btn btn-warning">Submit</button>
         </form>
       </div>
-      <div class="col-md-4" id="hidden">
-        <h1>Here's your match!</h1>
-        <img src="img/notyetdefinied" alt="a photo of a celeb">
-        <p>Ooh la la, lucky you! You've matched with<span id="celebrityName"></span></p>
+      <div class="col" id="hidden">
+        <div class="result">
+          <h1>Here's your match!</h1>
+          <img src="img/MichaelJordan.jpeg" alt="a photo of a celeb" id="celebImg">
+          <p>Ooh la la, lucky you, <span id="inputName"></span>! You've matched with <span id="celebrityName"></span></p>
+        </div>
       </div>
-  </div>  
+    </div>  
   </div>
 </body>
 </html>
