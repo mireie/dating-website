@@ -43,7 +43,6 @@ $(document).ready(function() {
         $("#hidden").fadeIn(2000);
         //Michael Jordan
       }
-asdfasdf
     }
         
     if ((gender === "g-female") || (gender === "g-all" && totalValue % 2 != 0)) {
